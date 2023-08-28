@@ -11,7 +11,7 @@ for column in columns:
     max_limit = mean + 2*std
     min_limit = mean-2*std
     print('hi')
-    df = df[df[column]>= min_limit and df[column]<=max_limit]
+    df_filtered = df.loc[(df[column]>= min_limit) & (df[column]<=max_limit)]
 
 
 
